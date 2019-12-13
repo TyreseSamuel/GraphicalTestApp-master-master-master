@@ -53,7 +53,7 @@ namespace GraphicalTestApp
             //Fires a shot (K)
             if (Input.IsKeyDown(75))
             {
-                Projectile Shot = new Shot(XAbsolute, YAbsloute, 0);
+                Projectile Shot = new Projectile(XAbsolute, YAbsolute, 0);
                 Vector3 direction = GetDirectionAbsolute();
                 direction.Normalize();
                 direction *= 30;

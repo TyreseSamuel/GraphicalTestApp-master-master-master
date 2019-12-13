@@ -9,6 +9,9 @@ namespace GraphicalTestApp
     class Axis : Entity
     {
         private Tank _tank;
+        private AABB _boxline;
+        private int _num;
+        static public List<AABB> hitbox = new List<AABB>();
 
         public Axis(float x, float y) : base(x, y)
         {
